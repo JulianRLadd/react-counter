@@ -1,14 +1,12 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import FlipNumbers from 'react-flip-numbers';
 
-function Display(props) {
-    // const [display,setDisplay] = useState(0);
-
+function Display({ display }) {
     return (
         <section className="display">
-            This is the Display for the Counter.
+            <FlipNumbers height={125} width={125} color="gold" background="" play={true} play perspective={1000} numbers={display.toString()} />
         </section>
     )
-
 
 }
 
